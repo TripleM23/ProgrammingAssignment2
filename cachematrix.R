@@ -1,6 +1,6 @@
 
 
-## Basically I used the example function given in the readme rewrote it. The sets a given inverse that another function should be able to return.
+##This function creates a matrix which can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Again I used the formula given in the example and replaced the mean with the inverse and m with i. This should compute the inverse of the special “matrix” returned by makeCacheMatrix above. 
+## This function is used to calculate the inverse of the above matrix. If the inverse is already calculated it should retrieve the inverse frome the cache. 
 
 
 cacheSolve <- function(x, ...) {
